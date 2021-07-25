@@ -3,19 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CE03C57F2688EAA400354080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C57E2688EAA400354080 /* AppDelegate.swift */; };
 		CE03C5812688EAA400354080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5802688EAA400354080 /* SceneDelegate.swift */; };
-		CE03C5832688EAA400354080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5822688EAA400354080 /* ViewController.swift */; };
 		CE03C5862688EAA400354080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03C5842688EAA400354080 /* Main.storyboard */; };
 		CE03C5892688EAA400354080 /* RPG_Maps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5872688EAA400354080 /* RPG_Maps.xcdatamodeld */; };
 		CE03C58B2688EAA600354080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE03C58A2688EAA600354080 /* Assets.xcassets */; };
 		CE03C58E2688EAA600354080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE03C58C2688EAA600354080 /* LaunchScreen.storyboard */; };
-		CE03C5992688EAA700354080 /* RPG_MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5982688EAA700354080 /* RPG_MapsTests.swift */; };
-		CE03C5A42688EAA700354080 /* RPG_MapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5A32688EAA700354080 /* RPG_MapsUITests.swift */; };
+		CE03C5B52688F58A00354080 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5B42688F58A00354080 /* MapViewController.swift */; };
+		CE03C5B72688F62700354080 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5B62688F62700354080 /* QRViewController.swift */; };
+		CE03C5B92688F63400354080 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5B82688F63400354080 /* LeaderboardViewController.swift */; };
+		CE03C5BB2688F64100354080 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C5BA2688F64100354080 /* AccountViewController.swift */; };
+		CE1D0C4326A094F7004A0CA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1D0C4226A094F7004A0CA5 /* GoogleService-Info.plist */; };
+		CE32EC3E2695CFB700E8632E /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32EC3C2695CFB700E8632E /* AccountTableViewCell.swift */; };
+		CE32EC3F2695CFB700E8632E /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE32EC3D2695CFB700E8632E /* AccountTableViewCell.xib */; };
+		CE32EC422695D17E00E8632E /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32EC412695D17E00E8632E /* Achievement.swift */; };
+		CE69E4A726ADF92B00097E08 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E4A626ADF92B00097E08 /* SignInViewController.swift */; };
+		CE69E4A926ADF93500097E08 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69E4A826ADF93500097E08 /* SignUpViewController.swift */; };
+		CE6F2BFC26A8239C00376597 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F2BFB26A8239C00376597 /* CustomImageView.swift */; };
+		CE6F2C0326A843C700376597 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F2C0126A843C700376597 /* HeaderTableViewCell.swift */; };
+		CE6F2C0426A843C700376597 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6F2C0226A843C700376597 /* HeaderTableViewCell.xib */; };
+		CE6F2C0626A8576400376597 /* UsersNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F2C0526A8576400376597 /* UsersNetworkManager.swift */; };
+		CE843B6B26A73FBF00625F5B /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE843B6A26A73FBF00625F5B /* PopUpViewController.swift */; };
+		CE843B6E26A7482900625F5B /* AchievementUnlocked.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE843B6D26A7482900625F5B /* AchievementUnlocked.wav */; };
+		CE8887E926A991B0006CD8B8 /* AccountHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8887E726A991B0006CD8B8 /* AccountHeaderTableViewCell.swift */; };
+		CE8887EA26A991B0006CD8B8 /* AccountHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8887E826A991B0006CD8B8 /* AccountHeaderTableViewCell.xib */; };
+		CE8887EE26A9B791006CD8B8 /* checkOutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */; };
+		CE9E033B26A45A7300D4234C /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033A26A45A7300D4234C /* NetworkBase.swift */; };
+		CE9E034026A45E2E00D4234C /* LocationsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */; };
+		CE9E034226A45E5E00D4234C /* APIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E034126A45E5E00D4234C /* APIStruct.swift */; };
+		CEF4B4C22694C90C000ED2A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF4B4C12694C90C000ED2A8 /* MapKit.framework */; };
+		CEF4B4C42694E6DA000ED2A8 /* CustomPinClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4B4C32694E6DA000ED2A8 /* CustomPinClass.swift */; };
+		CEF4B4CD269529BD000ED2A8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4B4CB269529BD000ED2A8 /* TableViewCell.swift */; };
+		CEF4B4CE269529BD000ED2A8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4B4CC269529BD000ED2A8 /* TableViewCell.xib */; };
+		CEF4B4D1269530CB000ED2A8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CEF4B4D0269530CB000ED2A8 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,18 +63,39 @@
 		CE03C57B2688EAA400354080 /* RPG Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE03C57E2688EAA400354080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE03C5802688EAA400354080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE03C5822688EAA400354080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE03C5852688EAA400354080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE03C5882688EAA400354080 /* RPG_Maps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPG_Maps.xcdatamodel; sourceTree = "<group>"; };
 		CE03C58A2688EAA600354080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE03C58D2688EAA600354080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE03C58F2688EAA600354080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE03C5942688EAA700354080 /* RPG MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG MapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE03C5982688EAA700354080 /* RPG_MapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPG_MapsTests.swift; sourceTree = "<group>"; };
-		CE03C59A2688EAA700354080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE03C59F2688EAA700354080 /* RPG MapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG MapsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE03C5A32688EAA700354080 /* RPG_MapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPG_MapsUITests.swift; sourceTree = "<group>"; };
-		CE03C5A52688EAA700354080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE03C5B42688F58A00354080 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CE03C5B62688F62700354080 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		CE03C5B82688F63400354080 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		CE03C5BA2688F64100354080 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CE1D0C4226A094F7004A0CA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE32EC3C2695CFB700E8632E /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		CE32EC3D2695CFB700E8632E /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		CE32EC412695D17E00E8632E /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		CE69E4A626ADF92B00097E08 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE69E4A826ADF93500097E08 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE6F2BFB26A8239C00376597 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CE6F2C0126A843C700376597 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CE6F2C0226A843C700376597 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CE6F2C0526A8576400376597 /* UsersNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworkManager.swift; sourceTree = "<group>"; };
+		CE843B6A26A73FBF00625F5B /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		CE843B6D26A7482900625F5B /* AchievementUnlocked.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AchievementUnlocked.wav; sourceTree = "<group>"; };
+		CE8887E726A991B0006CD8B8 /* AccountHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CE8887E826A991B0006CD8B8 /* AccountHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkOutAccountViewController.swift; sourceTree = "<group>"; };
+		CE9E033A26A45A7300D4234C /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
+		CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsNetworkManager.swift; sourceTree = "<group>"; };
+		CE9E034126A45E5E00D4234C /* APIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStruct.swift; sourceTree = "<group>"; };
+		CEF4B4C12694C90C000ED2A8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEF4B4C32694E6DA000ED2A8 /* CustomPinClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinClass.swift; sourceTree = "<group>"; };
+		CEF4B4CB269529BD000ED2A8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CEF4B4CC269529BD000ED2A8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF4B4D1269530CB000ED2A8 /* Kingfisher in Frameworks */,
+				CEF4B4C22694C90C000ED2A8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				CE03C57D2688EAA400354080 /* RPG Maps */,
-				CE03C5972688EAA700354080 /* RPG MapsTests */,
-				CE03C5A22688EAA700354080 /* RPG MapsUITests */,
 				CE03C57C2688EAA400354080 /* Products */,
+				CEF4B4C02694C90C000ED2A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,34 +147,264 @@
 		CE03C57D2688EAA400354080 /* RPG Maps */ = {
 			isa = PBXGroup;
 			children = (
-				CE03C57E2688EAA400354080 /* AppDelegate.swift */,
-				CE03C5802688EAA400354080 /* SceneDelegate.swift */,
-				CE03C5822688EAA400354080 /* ViewController.swift */,
+				CE6F2BFA26A8238400376597 /* CustomVisualStuff */,
+				CE843B6C26A7481100625F5B /* Audio */,
+				CE9E033926A45A6500D4234C /* Network */,
+				CE03C5B32688F57400354080 /* ViewControllers */,
+				CE03C5B22688ED1600354080 /* CoreDataAndOthers */,
+				CE03C5B12688ED0800354080 /* App */,
 				CE03C5842688EAA400354080 /* Main.storyboard */,
-				CE03C58A2688EAA600354080 /* Assets.xcassets */,
-				CE03C58C2688EAA600354080 /* LaunchScreen.storyboard */,
 				CE03C58F2688EAA600354080 /* Info.plist */,
-				CE03C5872688EAA400354080 /* RPG_Maps.xcdatamodeld */,
+				CE1D0C4226A094F7004A0CA5 /* GoogleService-Info.plist */,
+				CE03C58A2688EAA600354080 /* Assets.xcassets */,
 			);
 			path = "RPG Maps";
 			sourceTree = "<group>";
 		};
-		CE03C5972688EAA700354080 /* RPG MapsTests */ = {
+		CE03C5B12688ED0800354080 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CE03C5982688EAA700354080 /* RPG_MapsTests.swift */,
-				CE03C59A2688EAA700354080 /* Info.plist */,
+				CE03C57E2688EAA400354080 /* AppDelegate.swift */,
+				CE03C5802688EAA400354080 /* SceneDelegate.swift */,
 			);
-			path = "RPG MapsTests";
+			path = App;
 			sourceTree = "<group>";
 		};
-		CE03C5A22688EAA700354080 /* RPG MapsUITests */ = {
+		CE03C5B22688ED1600354080 /* CoreDataAndOthers */ = {
 			isa = PBXGroup;
 			children = (
-				CE03C5A32688EAA700354080 /* RPG_MapsUITests.swift */,
-				CE03C5A52688EAA700354080 /* Info.plist */,
+				CE03C58C2688EAA600354080 /* LaunchScreen.storyboard */,
+				CE03C5872688EAA400354080 /* RPG_Maps.xcdatamodeld */,
 			);
-			path = "RPG MapsUITests";
+			path = CoreDataAndOthers;
+			sourceTree = "<group>";
+		};
+		CE03C5B32688F57400354080 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE69E4A526ADF91B00097E08 /* Authentification */,
+				CE8887EC26A9B76C006CD8B8 /* CheckOutAccountViewController */,
+				CE32EC3A2695CDD400E8632E /* Account */,
+				CEF4B4C826952984000ED2A8 /* Leaderboard */,
+				CEF4B4BF2694C844000ED2A8 /* MapKit */,
+				CEF4B4C7269525B3000ED2A8 /* QRCodeScanner */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE32EC3A2695CDD400E8632E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CE8887EB26A991C1006CD8B8 /* ViewController */,
+				CE32EC402695D17100E8632E /* AchievementCustomClass */,
+				CE32EC3B2695CFA800E8632E /* TableViewCell */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		CE32EC3B2695CFA800E8632E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE8887E626A99196006CD8B8 /* Middle */,
+				CE8887E526A99191006CD8B8 /* Header */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CE32EC402695D17100E8632E /* AchievementCustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE32EC412695D17E00E8632E /* Achievement.swift */,
+			);
+			path = AchievementCustomClass;
+			sourceTree = "<group>";
+		};
+		CE69E4A526ADF91B00097E08 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				CE69E4A626ADF92B00097E08 /* SignInViewController.swift */,
+				CE69E4A826ADF93500097E08 /* SignUpViewController.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		CE6F2BF326A8194200376597 /* MiddlePart */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4B4CB269529BD000ED2A8 /* TableViewCell.swift */,
+				CEF4B4CC269529BD000ED2A8 /* TableViewCell.xib */,
+			);
+			path = MiddlePart;
+			sourceTree = "<group>";
+		};
+		CE6F2BF426A8195100376597 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F2C0126A843C700376597 /* HeaderTableViewCell.swift */,
+				CE6F2C0226A843C700376597 /* HeaderTableViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CE6F2BFA26A8238400376597 /* CustomVisualStuff */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F2BFB26A8239C00376597 /* CustomImageView.swift */,
+			);
+			path = CustomVisualStuff;
+			sourceTree = "<group>";
+		};
+		CE843B6826A73F8800625F5B /* PopUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE843B6A26A73FBF00625F5B /* PopUpViewController.swift */,
+			);
+			path = PopUpViewController;
+			sourceTree = "<group>";
+		};
+		CE843B6C26A7481100625F5B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CE843B6D26A7482900625F5B /* AchievementUnlocked.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		CE8887E526A99191006CD8B8 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CE8887E726A991B0006CD8B8 /* AccountHeaderTableViewCell.swift */,
+				CE8887E826A991B0006CD8B8 /* AccountHeaderTableViewCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CE8887E626A99196006CD8B8 /* Middle */ = {
+			isa = PBXGroup;
+			children = (
+				CE32EC3C2695CFB700E8632E /* AccountTableViewCell.swift */,
+				CE32EC3D2695CFB700E8632E /* AccountTableViewCell.xib */,
+			);
+			path = Middle;
+			sourceTree = "<group>";
+		};
+		CE8887EB26A991C1006CD8B8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C5BA2688F64100354080 /* AccountViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE8887EC26A9B76C006CD8B8 /* CheckOutAccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */,
+			);
+			path = CheckOutAccountViewController;
+			sourceTree = "<group>";
+		};
+		CE9E033926A45A6500D4234C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E033E26A45DFC00D4234C /* SpecificNetworkManagers */,
+				CE9E033D26A45DF100D4234C /* CodableStruct */,
+				CE9E033C26A45DE300D4234C /* NetworkManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE9E033C26A45DE300D4234C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E033A26A45A7300D4234C /* NetworkBase.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CE9E033D26A45DF100D4234C /* CodableStruct */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E034126A45E5E00D4234C /* APIStruct.swift */,
+			);
+			path = CodableStruct;
+			sourceTree = "<group>";
+		};
+		CE9E033E26A45DFC00D4234C /* SpecificNetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */,
+				CE6F2C0526A8576400376597 /* UsersNetworkManager.swift */,
+			);
+			path = SpecificNetworkManagers;
+			sourceTree = "<group>";
+		};
+		CEF4B4BF2694C844000ED2A8 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE843B6826A73F8800625F5B /* PopUpViewController */,
+				CEF4B4C62694E6E6000ED2A8 /* CustomPin */,
+				CEF4B4C52694E6DE000ED2A8 /* Scene */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		CEF4B4C02694C90C000ED2A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4B4C12694C90C000ED2A8 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF4B4C52694E6DE000ED2A8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C5B42688F58A00354080 /* MapViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		CEF4B4C62694E6E6000ED2A8 /* CustomPin */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4B4C32694E6DA000ED2A8 /* CustomPinClass.swift */,
+			);
+			name = CustomPin;
+			sourceTree = "<group>";
+		};
+		CEF4B4C7269525B3000ED2A8 /* QRCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C5B62688F62700354080 /* QRViewController.swift */,
+			);
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		CEF4B4C826952984000ED2A8 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4B4CA269529AA000ED2A8 /* Scene */,
+				CEF4B4C9269529A2000ED2A8 /* TableViewCells */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		CEF4B4C9269529A2000ED2A8 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F2BF426A8195100376597 /* Header */,
+				CE6F2BF326A8194200376597 /* MiddlePart */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		CEF4B4CA269529AA000ED2A8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C5B82688F63400354080 /* LeaderboardViewController.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +423,9 @@
 			dependencies = (
 			);
 			name = "RPG Maps";
+			packageProductDependencies = (
+				CEF4B4D0269530CB000ED2A8 /* Kingfisher */,
+			);
 			productName = "RPG Maps";
 			productReference = CE03C57B2688EAA400354080 /* RPG Maps.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +497,9 @@
 				Base,
 			);
 			mainGroup = CE03C5722688EAA400354080;
+			packageReferences = (
+				CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CE03C57C2688EAA400354080 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,8 +517,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE03C58E2688EAA600354080 /* LaunchScreen.storyboard in Resources */,
+				CE8887EA26A991B0006CD8B8 /* AccountHeaderTableViewCell.xib in Resources */,
+				CE843B6E26A7482900625F5B /* AchievementUnlocked.wav in Resources */,
+				CE32EC3F2695CFB700E8632E /* AccountTableViewCell.xib in Resources */,
+				CEF4B4CE269529BD000ED2A8 /* TableViewCell.xib in Resources */,
+				CE6F2C0426A843C700376597 /* HeaderTableViewCell.xib in Resources */,
 				CE03C58B2688EAA600354080 /* Assets.xcassets in Resources */,
 				CE03C5862688EAA400354080 /* Main.storyboard in Resources */,
+				CE1D0C4326A094F7004A0CA5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +549,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE03C5832688EAA400354080 /* ViewController.swift in Sources */,
+				CE69E4A926ADF93500097E08 /* SignUpViewController.swift in Sources */,
+				CE8887EE26A9B791006CD8B8 /* checkOutAccountViewController.swift in Sources */,
 				CE03C57F2688EAA400354080 /* AppDelegate.swift in Sources */,
+				CE03C5B72688F62700354080 /* QRViewController.swift in Sources */,
+				CE8887E926A991B0006CD8B8 /* AccountHeaderTableViewCell.swift in Sources */,
+				CE03C5BB2688F64100354080 /* AccountViewController.swift in Sources */,
+				CE32EC3E2695CFB700E8632E /* AccountTableViewCell.swift in Sources */,
+				CEF4B4CD269529BD000ED2A8 /* TableViewCell.swift in Sources */,
+				CE32EC422695D17E00E8632E /* Achievement.swift in Sources */,
 				CE03C5892688EAA400354080 /* RPG_Maps.xcdatamodeld in Sources */,
+				CE9E034226A45E5E00D4234C /* APIStruct.swift in Sources */,
 				CE03C5812688EAA400354080 /* SceneDelegate.swift in Sources */,
+				CE9E034026A45E2E00D4234C /* LocationsNetworkManager.swift in Sources */,
+				CE843B6B26A73FBF00625F5B /* PopUpViewController.swift in Sources */,
+				CE03C5B92688F63400354080 /* LeaderboardViewController.swift in Sources */,
+				CE69E4A726ADF92B00097E08 /* SignInViewController.swift in Sources */,
+				CE9E033B26A45A7300D4234C /* NetworkBase.swift in Sources */,
+				CE6F2C0626A8576400376597 /* UsersNetworkManager.swift in Sources */,
+				CE03C5B52688F58A00354080 /* MapViewController.swift in Sources */,
+				CE6F2C0326A843C700376597 /* HeaderTableViewCell.swift in Sources */,
+				CE6F2BFC26A8239C00376597 /* CustomImageView.swift in Sources */,
+				CEF4B4C42694E6DA000ED2A8 /* CustomPinClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +578,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE03C5992688EAA700354080 /* RPG_MapsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +585,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE03C5A42688EAA700354080 /* RPG_MapsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +895,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEF4B4D0269530CB000ED2A8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE03C5872688EAA400354080 /* RPG_Maps.xcdatamodeld */ = {

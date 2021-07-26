@@ -32,6 +32,8 @@
 		CE8887E926A991B0006CD8B8 /* AccountHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8887E726A991B0006CD8B8 /* AccountHeaderTableViewCell.swift */; };
 		CE8887EA26A991B0006CD8B8 /* AccountHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8887E826A991B0006CD8B8 /* AccountHeaderTableViewCell.xib */; };
 		CE8887EE26A9B791006CD8B8 /* checkOutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */; };
+		CE980D7726AED033006CECCA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE980D7626AED033006CECCA /* FirebaseAuth */; };
+		CE980D7926AED033006CECCA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE980D7826AED033006CECCA /* FirebaseDatabase */; };
 		CE9E033B26A45A7300D4234C /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033A26A45A7300D4234C /* NetworkBase.swift */; };
 		CE9E034026A45E2E00D4234C /* LocationsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */; };
 		CE9E034226A45E5E00D4234C /* APIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E034126A45E5E00D4234C /* APIStruct.swift */; };
@@ -104,6 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF4B4D1269530CB000ED2A8 /* Kingfisher in Frameworks */,
+				CE980D7726AED033006CECCA /* FirebaseAuth in Frameworks */,
+				CE980D7926AED033006CECCA /* FirebaseDatabase in Frameworks */,
 				CEF4B4C22694C90C000ED2A8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,8 @@
 			name = "RPG Maps";
 			packageProductDependencies = (
 				CEF4B4D0269530CB000ED2A8 /* Kingfisher */,
+				CE980D7626AED033006CECCA /* FirebaseAuth */,
+				CE980D7826AED033006CECCA /* FirebaseDatabase */,
 			);
 			productName = "RPG Maps";
 			productReference = CE03C57B2688EAA400354080 /* RPG Maps.app */;
@@ -499,6 +505,7 @@
 			mainGroup = CE03C5722688EAA400354080;
 			packageReferences = (
 				CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CE980D7526AED033006CECCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CE03C57C2688EAA400354080 /* Products */;
 			projectDirPath = "";
@@ -897,6 +904,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE980D7526AED033006CECCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.0;
+			};
+		};
 		CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -908,6 +923,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE980D7626AED033006CECCA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE980D7526AED033006CECCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CE980D7826AED033006CECCA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE980D7526AED033006CECCA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		CEF4B4D0269530CB000ED2A8 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEF4B4CF269530CB000ED2A8 /* XCRemoteSwiftPackageReference "Kingfisher" */;

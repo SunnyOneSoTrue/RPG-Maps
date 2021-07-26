@@ -9,6 +9,9 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,15 +19,10 @@ class SignInViewController: UIViewController {
         title = "Sign In"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onSignIn(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func onRegister(_ sender: UIButton) {
+    }
+    
 }

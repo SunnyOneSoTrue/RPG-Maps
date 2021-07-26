@@ -318,6 +318,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignIn:" destination="ouv-qY-uuk" eventType="touchUpInside" id="4OL-zG-ntI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DS-N3-tpV">
                                 <rect key="frame" x="15" y="530" width="384" height="30"/>
@@ -325,6 +328,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onRegister:" destination="ouv-qY-uuk" eventType="touchUpInside" id="cuS-GR-Afc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nL8-gp-gXJ"/>
@@ -346,6 +352,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OQN-Ea-yn5"/>
+                    <connections>
+                        <outlet property="emailField" destination="WKW-rz-iNN" id="FwV-y6-CTf"/>
+                        <outlet property="passwordField" destination="X1E-gf-RZu" id="X2m-E7-wrv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAc-cG-oiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -380,6 +390,9 @@
                                 <state key="normal" title="Register!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onRegister:" destination="6hj-lK-mic" eventType="touchUpInside" id="ZJd-vZ-Ofd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mHb-Uj-nem"/>
@@ -400,6 +413,11 @@
                             <constraint firstItem="mHb-Uj-nem" firstAttribute="trailing" secondItem="AeW-cB-qry" secondAttribute="trailing" constant="15" id="xzo-Ww-YN8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="3WC-r1-7Fz" id="SAH-YS-i1C"/>
+                        <outlet property="passwordField" destination="UKS-YP-BlA" id="kKD-Si-mJI"/>
+                        <outlet property="usernameField" destination="L50-Ex-Ylh" id="i8F-ek-Qh4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tg3-9m-Bi8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -125,18 +125,16 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate{
     
     //MARK:this is called when the user enters the monitored regions.
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-    // MARK: TO DO: MAKE A POPUP ANIMATION OF THE ACHIEVEMENT UNLOCKING
-        
-        
         //MARK: this shows the popup view controller on the screen
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PopUpViewController") as! PopUpViewController
         self.addChild(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParent: self)
-        
-        
-        //MARK: This will play the "discovery" sound
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        self.clLocationManager.stopMonitoring(for: region)
     }
     
     //MARK: This will show the routes to the selected location.

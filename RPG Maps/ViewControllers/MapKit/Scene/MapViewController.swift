@@ -43,7 +43,9 @@ class MapViewController: UIViewController{
         //MARK: creates the zoom place for the launch of the map (change later to person's location)
         let NarikalaLL = CLLocation(latitude: 41.687749, longitude: 44.809563)
         let regionRadius: CLLocationDistance = 750.0
-        let region = MKCoordinateRegion(center: NarikalaLL.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        
+        
+        let region = MKCoordinateRegion(center: clLocationManager.location?.coordinate ?? NarikalaLL.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(region, animated: true)
         
         

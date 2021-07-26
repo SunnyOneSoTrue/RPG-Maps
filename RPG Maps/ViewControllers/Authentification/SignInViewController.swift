@@ -28,15 +28,19 @@ class SignInViewController: UIViewController {
        
         signInButton.layer.cornerRadius = 27
         signInButton.layer.borderWidth = 3
-        signInButton.layer.borderColor = UIColor.white.cgColor
+        signInButton.layer.borderColor = UIColor.systemBlue.cgColor
         signInButton.backgroundColor = UIColor(red: 0.10, green: 0.10, blue: 0.10, alpha: 1.00)
         signInButton.setTitleColor(UIColor(red: 0.82, green: 0.82, blue: 0.82, alpha: 1.00), for: .normal)
         
         registerButton.layer.cornerRadius = 27
         registerButton.layer.borderWidth = 3
-        registerButton.layer.borderColor = UIColor.white.cgColor
+        registerButton.layer.borderColor = UIColor(red: 0.15, green: 0.54, blue: 0.15, alpha: 1.00).cgColor
         registerButton.backgroundColor = UIColor(red: 0.10, green: 0.10, blue: 0.10, alpha: 1.00)
         registerButton.setTitleColor(UIColor(red: 0.82, green: 0.82, blue: 0.82, alpha: 1.00), for: .normal)
+        
+        emailField.attributedPlaceholder = NSAttributedString(string:"Email", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        passwordField.attributedPlaceholder = NSAttributedString(string:"Password", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        usernameField.attributedPlaceholder = NSAttributedString(string:"Username", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
     }
     
     @IBAction func onSignIn(_ sender: UIButton) {

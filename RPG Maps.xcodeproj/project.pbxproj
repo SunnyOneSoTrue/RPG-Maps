@@ -34,6 +34,7 @@
 		CE8887EE26A9B791006CD8B8 /* checkOutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */; };
 		CE980D7726AED033006CECCA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE980D7626AED033006CECCA /* FirebaseAuth */; };
 		CE980D7926AED033006CECCA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE980D7826AED033006CECCA /* FirebaseDatabase */; };
+		CE980D7E26AF3839006CECCA /* CustomSignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE980D7D26AF3839006CECCA /* CustomSignInTextField.swift */; };
 		CE9E033B26A45A7300D4234C /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033A26A45A7300D4234C /* NetworkBase.swift */; };
 		CE9E034026A45E2E00D4234C /* LocationsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */; };
 		CE9E034226A45E5E00D4234C /* APIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E034126A45E5E00D4234C /* APIStruct.swift */; };
@@ -91,6 +92,7 @@
 		CE8887E726A991B0006CD8B8 /* AccountHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CE8887E826A991B0006CD8B8 /* AccountHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		CE8887ED26A9B791006CD8B8 /* checkOutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkOutAccountViewController.swift; sourceTree = "<group>"; };
+		CE980D7D26AF3839006CECCA /* CustomSignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignInTextField.swift; sourceTree = "<group>"; };
 		CE9E033A26A45A7300D4234C /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
 		CE9E033F26A45E2E00D4234C /* LocationsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsNetworkManager.swift; sourceTree = "<group>"; };
 		CE9E034126A45E5E00D4234C /* APIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStruct.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6F2BFB26A8239C00376597 /* CustomImageView.swift */,
+				CE980D7D26AF3839006CECCA /* CustomSignInTextField.swift */,
 			);
 			path = CustomVisualStuff;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				CEF4B4CD269529BD000ED2A8 /* TableViewCell.swift in Sources */,
 				CE32EC422695D17E00E8632E /* Achievement.swift in Sources */,
 				CE03C5892688EAA400354080 /* RPG_Maps.xcdatamodeld in Sources */,
+				CE980D7E26AF3839006CECCA /* CustomSignInTextField.swift in Sources */,
 				CE9E034226A45E5E00D4234C /* APIStruct.swift in Sources */,
 				CE03C5812688EAA400354080 /* SceneDelegate.swift in Sources */,
 				CE9E034026A45E2E00D4234C /* LocationsNetworkManager.swift in Sources */,

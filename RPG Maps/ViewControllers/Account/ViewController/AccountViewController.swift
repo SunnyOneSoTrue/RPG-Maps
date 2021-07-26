@@ -27,7 +27,16 @@ class AccountViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
+//        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
+//        view.addSubview(navBar)
+//
+//        let navItem = UINavigationItem(title: "Log Out")
+//        let LogOutItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: #selector(onLogOut))
+//        navItem.rightBarButtonItem = LogOutItem
+//
+//        navBar.setItems([navItem], animated: false)
+//
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(onLogOut))
     }
     
     func getUsers(){ // MARK: This gets and sets the user info into the users array
@@ -49,8 +58,18 @@ class AccountViewController: UIViewController {
         })
     }
     
-    @IBAction func onLogOut(_ sender: UIButton) {
-        exit(1)
+    @objc func onLogOut() {
+        
+        self.loggedInUser.name = ""
+        transitionToSignInVC()
+        
+    }
+    
+    func transitionToSignInVC (){
+        let signInVC = storyboard?.instantiateViewController(identifier: "SignInViewController") as! SignInViewController
+        
+        view.window?.rootViewController = signInVC
+        view.window?.makeKeyAndVisible()
     }
     
 }

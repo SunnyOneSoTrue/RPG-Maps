@@ -107,6 +107,8 @@ extension QRViewController : AVCaptureMetadataOutputObjectsDelegate {
     
     func found(code: String) {
         if let url = URL(string: code) {
+            let vc = storyboard?.instantiateViewController(identifier: "AccountViewController") as! AccountViewController
+            vc.loggedInUser.points += 500
             UIApplication.shared.open(url)
         }
     }

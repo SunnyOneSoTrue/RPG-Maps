@@ -133,6 +133,11 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate{
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParent: self)
+        
+        let vc = storyboard?.instantiateViewController(identifier: "AccountViewController") as! AccountViewController
+        vc.loggedInUser.points += 500
+        
+        self.clLocationManager.stopMonitoring(for: region)
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {

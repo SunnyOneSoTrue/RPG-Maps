@@ -25,17 +25,6 @@ class AccountViewController: UIViewController {
         usersManager = UsersManager()
         getUsers()
 
-        // Do any additional setup after loading the view.
-        
-//        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
-//        view.addSubview(navBar)
-//
-//        let navItem = UINavigationItem(title: "Log Out")
-//        let LogOutItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: #selector(onLogOut))
-//        navItem.rightBarButtonItem = LogOutItem
-//
-//        navBar.setItems([navItem], animated: false)
-//
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(onLogOut))
     }
     

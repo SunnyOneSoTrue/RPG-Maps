@@ -13,10 +13,13 @@ class AccountViewController: UIViewController {
     
     private var usersManager: UsersManagerProtocol?
     
-    var loggedInUser = (name: "SunnySideUp", points: 0, image: "", coverImage: "", achievements: [])
+    var loggedInUser = (name: "", points: 0, image: "", coverImage: "", achievements: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loggedInUser.name = UserDefaults.standard.string(forKey: "loggedInUser") ?? ""
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "AccountTableViewCell", bundle: nil), forCellReuseIdentifier: "AccountTableViewCell")
@@ -26,6 +29,7 @@ class AccountViewController: UIViewController {
         getUsers()
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(onLogOut))
+        
     }
     
     func getUsers(){ // MARK: This gets and sets the user info into the users array
@@ -50,6 +54,7 @@ class AccountViewController: UIViewController {
     @objc func onLogOut() {
         
         self.loggedInUser.name = ""
+        UserDefaults.standard.setValue("", forKey: "loggedInUser")
         transitionToSignInVC()
         
     }
@@ -75,8 +80,8 @@ extension AccountViewController: UITableViewDelegate, UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "AccountHeaderTableViewCell", for: indexPath) as? AccountHeaderTableViewCell else { return UITableViewCell() }
             
             cell.NameLabel.text = loggedInUser.name
-            cell.coverPhotoImageView.kf.setImage(with: URL(string: loggedInUser.image))
             cell.coverPhotoImageView.kf.setImage(with: URL(string: loggedInUser.coverImage))
+            cell.profilePictureImageView.kf.setImage(with: URL(string: loggedInUser.image))
             cell.pointsLabel.text = "\(loggedInUser.points) points"
             
             return cell

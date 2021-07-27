@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="413" height="454"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundPic" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-qn-J6U">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="V0e-qn-J6U">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="262"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="262" id="L7r-xC-6eC"/>
@@ -25,7 +25,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0r-HZ-nsF">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="454"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="3xy-ut-dvg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="3xy-ut-dvg">
                                 <rect key="frame" x="106" y="169" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Xm9-zr-3Xd"/>
@@ -81,7 +81,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ProfilePic" width="1365" height="2048"/>
-        <image name="backgroundPic" width="2048" height="1024"/>
+        <image name="Icon.png" width="72" height="72"/>
+        <image name="ic_launcher.png" width="72" height="72"/>
     </resources>
 </document>

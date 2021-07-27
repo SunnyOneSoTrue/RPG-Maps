@@ -9,13 +9,13 @@ import UIKit
 
 class checkOutAccountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-   var user = (name: "SunnySideUp", points: 0, image: "", coverImage: "", achievements: [])
+   var user = (name: "", points: 0, image: "", coverImage: "", achievements: [])
     
     @IBOutlet weak var tableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView?.delegate = self
         tableView?.dataSource = self
         tableView?.register(UINib(nibName: "AccountTableViewCell", bundle: nil), forCellReuseIdentifier: "AccountTableViewCell")
@@ -34,8 +34,8 @@ class checkOutAccountViewController: UIViewController, UITableViewDelegate, UITa
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "AccountHeaderTableViewCell", for: indexPath) as? AccountHeaderTableViewCell else { return UITableViewCell() }
             
             cell.NameLabel.text = user.name
-            cell.coverPhotoImageView.kf.setImage(with: URL(string: user.image))
             cell.coverPhotoImageView.kf.setImage(with: URL(string: user.coverImage))
+            cell.profilePictureImageView.kf.setImage(with: URL(string: user.image))
             cell.pointsLabel.text = "\(user.points) points"
             
             return cell

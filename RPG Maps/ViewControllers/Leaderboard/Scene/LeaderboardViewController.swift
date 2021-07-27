@@ -101,7 +101,13 @@ extension LeaderboardViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = (storyboard?.instantiateViewController(identifier: "checkOutAccountViewController"))! as checkOutAccountViewController
         
-        vc.user = (name: users[indexPath.row + 2].name, points: users[indexPath.row + 2].points, image: users[indexPath.row + 2].image, coverImage: users[indexPath.row + 2].coverImage, achievements: users[indexPath.row + 2].achievements)
+//        vc.user = (name: users[indexPath.row + 2].name, points: users[indexPath.row + 2].points, image: users[indexPath.row + 2].image, coverImage: users[indexPath.row + 2].coverImage, achievements: users[indexPath.row + 2].achievements)
+        
+        vc.user.name = users[indexPath.row + 2].name
+        vc.user.points = users[indexPath.row + 2].points
+        vc.user.image = users[indexPath.row + 2].image
+        vc.user.coverImage = users[indexPath.row + 2].coverImage
+        vc.user.achievements = users[indexPath.row + 2].achievements
         
         navigationController?.pushViewController(vc, animated: true)
     }

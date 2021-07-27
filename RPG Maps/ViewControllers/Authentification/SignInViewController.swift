@@ -54,17 +54,15 @@ class SignInViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }
                 else{
+                    //MARK: This transitions to the home screen
+                    UserDefaults.standard.setValue(self.usernameField.text, forKey: "loggedInUser")
                     self.transitionToHomeVC()
                 }
             }
-            //MARK: This transitions to the home screen
-            
         }
         else{
             showError(on: errorLabel, error: error!)
         }
-        
-       
     }
     
     @IBAction func onRegister(_ sender: UIButton) {
@@ -74,9 +72,6 @@ class SignInViewController: UIViewController {
     }
     
     func transitionToHomeVC (){
-        let accountVC = storyboard?.instantiateViewController(identifier: "AccountViewController") as! AccountViewController
-        accountVC.loggedInUser.name = usernameField.text!
-        
         let tabbar = storyboard?.instantiateViewController(identifier: "TabbarController") as! UITabBarController
         view.window?.rootViewController = tabbar
         view.window?.makeKeyAndVisible()

@@ -21,11 +21,13 @@
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ihd-py-T3j">
                                 <rect key="frame" x="15" y="679" width="384" height="32"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.36862745098039218" blue="0.97647058823529409" alpha="0.53000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Simple"/>
                                     <segment title="Satellite"/>
                                     <segment title="Combined"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.32156862749999998" green="0.36862745099999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="onChangeMap:" destination="BYZ-38-t0r" eventType="valueChanged" id="5HC-CJ-Sr3"/>
                                 </connections>
@@ -46,6 +48,7 @@
                     <navigationItem key="navigationItem" id="5VZ-W0-ycA"/>
                     <connections>
                         <outlet property="mapView" destination="1Xd-TG-YJa" id="W6P-Qz-1Gz"/>
+                        <outlet property="segment" destination="ihd-py-T3j" id="hTB-Y7-ocw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,11 +150,11 @@
             <objects>
                 <viewController storyboardIdentifier="LeaderboardViewController" id="kXZ-IV-Jwo" customClass="LeaderboardViewController" customModule="RPG_Maps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qDa-Gk-kGg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-tZ-BKg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.0" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -208,11 +211,11 @@
             <objects>
                 <viewController storyboardIdentifier="AccountViewController" id="mWm-VK-K0D" customClass="AccountViewController" customModule="RPG_Maps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2MN-8v-oUH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i88-r1-fSZ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -282,7 +285,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H91-MM-FgR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Leaderboard" image="icons8-leaderboard-25" id="KB8-5s-3Nw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oH5-kD-57v">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="oH5-kD-57v">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.25098039220000001" green="0.0" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -583,7 +587,7 @@
         <!--Navigation Controller-->
         <scene sceneID="34i-NG-TlW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v2k-gU-qlg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignInNavController" automaticallyAdjustsScrollViewInsets="NO" id="v2k-gU-qlg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="fE3-oW-YuZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -606,7 +610,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fwE-Qp-QJu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="hur-z0-x3o"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dMy-PQ-87U">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="dMy-PQ-87U">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -621,6 +626,15 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="3WC-r1-7Fz">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="L50-Ex-Ylh">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="UKS-YP-BlA">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
         <designable name="WKW-rz-iNN">
             <size key="intrinsicContentSize" width="62.5" height="34"/>
         </designable>

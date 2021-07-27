@@ -14,6 +14,7 @@ class MapViewController: UIViewController{
     
     //MARK: CREATING DIRECTIONS DOES NOT WORK. FIX IT!!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var segment: UISegmentedControl!
     
     let clLocationManager = CLLocationManager()
     var directionsArray: [MKDirections] = []
@@ -40,15 +41,16 @@ class MapViewController: UIViewController{
         
         mapView.delegate = self
         
-        //MARK: creates the zoom place for the launch of the map (change later to person's location)
+        //MARK: creates the zoom place for the launch of the map
         let regionRadius: CLLocationDistance = 750.0
-        
-        
-        let region = MKCoordinateRegion(center: clLocationManager.location!.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        let region = MKCoordinateRegion(center: clLocationManager.location?.coordinate ?? CLLocationCoordinate2D(latitude: 41.6878, longitude: 44.8096), latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(region, animated: true)
         
         
         loadLocations()
+        
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
         
     }
     

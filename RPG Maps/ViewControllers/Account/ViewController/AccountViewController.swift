@@ -60,7 +60,7 @@ class AccountViewController: UIViewController {
     }
     
     func transitionToSignInVC (){
-        let signInVC = storyboard?.instantiateViewController(identifier: "SignInViewController") as! SignInViewController
+        let signInVC = storyboard?.instantiateViewController(identifier: "SignInNavController") as! UINavigationController
         
         view.window?.rootViewController = signInVC
         view.window?.makeKeyAndVisible()

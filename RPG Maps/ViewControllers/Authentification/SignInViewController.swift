@@ -23,6 +23,7 @@ class SignInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Sign In"
+       
 //        errorLabel.alpha=0
         errorLabel.text = "Welcome To Your Adventure"
        
@@ -41,6 +42,10 @@ class SignInViewController: UIViewController {
         emailField.attributedPlaceholder = NSAttributedString(string:"Email", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         passwordField.attributedPlaceholder = NSAttributedString(string:"Password", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         usernameField.attributedPlaceholder = NSAttributedString(string:"Username", attributes:[NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.backgroundColor = UIColor.black
     }
     
     @IBAction func onSignIn(_ sender: UIButton) {

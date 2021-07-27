@@ -14,14 +14,25 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var errorLable: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Registration"
-        errorLable.alpha=0
+        title = "Create Account"
+        errorLable.alpha = 0
         
+        errorLable.text = "This Is Where You Create Your New Character"
+        
+        image.layer.cornerRadius = 50 //image.frame.width/2
+        
+        registerButton.layer.cornerRadius = 20
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.backgroundColor = UIColor(red: 0.32, green: 0.37, blue: 0.98, alpha: 1.00)
     }
     
     //MARK: If this method returns nil it means that everything is valid, otherwise it returns the error string
